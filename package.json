@@ -10,21 +10,13 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--no-deprecation react-scripts start",
-    "build": "cross-env NODE_OPTIONS=--no-deprecation react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postinstall": "patch-package"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "browserslist": {
     "production": [
@@ -38,27 +30,9 @@
       "last 1 safari version"
     ]
   },
-  "overrides": {
-    "nth-check": "2.1.1",
-    "postcss": "8.4.31",
-    "serialize-javascript": "7.0.5",
-    "@tootallnate/once": "3.0.1",
-    "underscore": "1.13.8",
-    "flatted": "3.4.2",
-    "node-forge": "1.4.0",
-    "webpack-dev-server": "5.2.3",
-    "path-to-regexp": "0.1.13",
-    "picomatch": "2.3.2",
-    "brace-expansion@^1.1.7": "1.1.13",
-    "brace-expansion@^2.0.0": "2.0.3",
-    "yaml": "1.10.3",
-    "postcss-load-config": {
-      "yaml": "2.8.3"
-    }
-  },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "cross-env": "^10.1.0",
-    "patch-package": "^8.0.1"
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.10"
   }
 }

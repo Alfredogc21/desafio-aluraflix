@@ -1,29 +1,73 @@
 # AluraFlix
 
-## Descripción
+Aplicacion web para gestionar y visualizar videos por categorias, desarrollada en React.
 
-El proyecto AluraFlix, desarrollado por Alfredo Gomez Culma como parte del programa Alura-ONE, es una aplicación que permite a los usuarios gestionar una lista de videos similar a una plataforma de streaming, utilizando React como su principal framework.
+## Stack
 
-## Objetivos de Aprendizaje
+- React 18
+- React Router DOM 6
+- Vite 7
+- CSS Modules
 
-- **Iniciar proyectos con React**: Configurar el entorno de desarrollo y crear aplicaciones utilizando Create React App o Vite.
-- **Componentización**: Crear interfaces modulares y reutilizables mediante componentes de React.
-- **Manejo de estado y efectos**: Usar hooks como `useState` y `useEffect` para manejar el estado de la aplicación.
-- **Integración con APIs**: Consumir datos de APIs externas utilizando `fetch` o `axios`.
-- **Estilización**: Aplicar estilos a los componentes utilizando CSS, CSS-in-JS, o frameworks de diseño.
-- **Enrutamiento**: Implementar la navegación entre diferentes vistas usando React Router.
-- **Despliegue**: Publicar la aplicación en plataformas como Vercel o Netlify.
+## Requisitos
 
-## Tecnologías Utilizadas
+- Node.js 18 o superior
+- npm 9 o superior
 
-- React
-- JavaScript
-- HTML
-- CSS
-- Vercel (para el despliegue)
+## Instalacion
 
-## Instalación y Uso
+1. Clona el repositorio.
+2. Entra en la carpeta del proyecto.
+3. Instala dependencias.
 
-1. Clona el repositorio desde [este enlace](https://github.com/Alfredogc21/desafio-aluraflix.git).
-2. Instala las dependencias con `npm install`.
-3. Inicia la aplicación con `npm start`.
+```bash
+git clone https://github.com/Alfredogc21/desafio-aluraflix.git
+cd desafio-aluraflix
+npm install
+```
+
+## Scripts disponibles
+
+- `npm start`: inicia el servidor de desarrollo con Vite.
+- `npm run dev`: equivalente a `npm start`.
+- `npm run build`: genera build de produccion en `dist/`.
+- `npm run preview`: previsualiza localmente el build de produccion.
+
+## Desarrollo local
+
+```bash
+npm start
+```
+
+Por defecto, la app queda disponible en:
+
+```text
+http://localhost:5173/
+```
+
+## Fuente de datos
+
+Actualmente la aplicacion consume una API remota configurada en `src/context/GlobalContext.jsx`.
+
+Si quieres usar el archivo local `db.json`, puedes levantar un servidor local con:
+
+```bash
+npx json-server --watch db.json --port 3001
+```
+
+Y luego cambiar temporalmente la URL de la API en `src/context/GlobalContext.jsx`.
+
+## Build de produccion
+
+```bash
+npm run build
+npm run preview
+```
+
+## Seguridad
+
+Para revisar vulnerabilidades de dependencias:
+
+```bash
+npm audit
+```
